@@ -33,7 +33,7 @@
 		</nav>
 
 	<!-----------------------------TOPO MOBILE-------------------------------->
-		<nav class="mobile right">
+		<nav class="mobile">
 				<div class="botao-menu-mobile">
 					<i class="fas fa-bars"></i>
 				</div>

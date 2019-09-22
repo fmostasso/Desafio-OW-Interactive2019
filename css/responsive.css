@@ -200,8 +200,10 @@ ul li img{
 
 	nav.mobile {
 		display: block;
+		margin-left: 2%;
 	}
 
+	
 	.botao-menu-mobile {
 		font-size: 24px;
 		cursor: pointer;
@@ -249,7 +251,7 @@ ul li img{
 }
 
 .logo{
-	margin-left: 5%;
+	margin-left: auto;
 	margin-top: 5%;
 }
 

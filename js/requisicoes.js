@@ -11,6 +11,8 @@ function requestByAjax(url, callback) {
 	xhr.send();
 }
 
+/************ NÃO FUNCIONOU A REQUISIÇÃO PARA O BANNER **********/
+
 const divConteudo = document.getElementById('conteudo1');
 requestByAjax('https://api.myjson.com/bins/y3zct', function (xhr) {
 	var response = JSON.parse(xhr.responseText);
