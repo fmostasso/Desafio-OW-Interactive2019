@@ -1,0 +1,390 @@
+
+/************* RESET E CONFIGURAÇÕES GERAIS ***************/
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+
+/************* TOPO ***************/
+
+.navegacao{
+	height: 135px;
+}
+
+.logo{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.lista{
+	position: absolute;
+	top: 75px;
+	left: 420px;
+}
+
+.lista ul li {
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 63px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.lista ul li a{
+	color: #000;
+}
+
+.lista ul li a:hover{
+	color: #cab097;
+	text-decoration: none;
+	transition: 1s;
+}
+
+.lista ul li i{
+	border-left: 1px solid #a8a8a8;
+	padding-left: 40px;
+}
+
+.mobile {
+	display: none;
+}
+
+.banner{
+	height: 400px;
+	background: url('../images/banner.jpg') center 0 no-repeat;
+}
+.images{
+	position: absolute;
+	top: 450px;
+	left: 24px;
+	height: 276px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.image-wrapper{
+	height: 275px;
+	width: 260px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+.image-wrapper figcaption{
+	position: relative;
+	z-index: 2;
+	top: 210px;
+	left:55%;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.05em;
+	text-transform: uppercase;
+	transform: translateX(-50%) translateY(-50%);
+
+}
+
+#receitas img{
+	width: 100%;
+}
+
+.images img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+
+}
+
+.mascara{
+  transition: top 400ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.image-wrapper:hover > .mascara{
+  top: 100%;
+}
+
+/************* PAINEL SOBRE E NOTÍCIAS ***************/
+.painel{
+	margin-top: 280px;
+	/*margin-left: -20px !important;*/
+	height: 310px;
+}
+
+.painel h3{
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.painel p {
+	font-weight: 300;
+	font-size: 0.90em;
+}
+
+.painel h6{
+	font-weight: bold;
+	font-size: 0.85em;
+}
+
+.panific{
+	width: 265px !important;
+	height: 310px !important;
+	margin-left: -40px !important;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.panific img{
+	width: 480px;
+	height: 325px;
+	position: absolute;
+	top: 50%;
+	left: 65%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.noticias{
+	position: relative;
+	top: -45px;
+}
+
+.sobre h3{
+	text-align: center;
+	text-transform: uppercase;
+	color: #403225;
+}
+
+.sobre p{
+	text-align: justify;
+	margin: 30px 30px 0 0;
+}
+
+.noticias{
+	background: #FAFAFA;
+	padding-bottom: 45px;
+}
+
+.noticias h3{
+	text-transform: uppercase;
+	padding-top: 45px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	color: #d1bba6;
+}
+
+.noticias h6{
+	color: #a67b52;
+	margin-top: 30px;
+	margin: 0 30px;
+}
+
+.noticias p {
+	margin: 10px 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+.noticias .no-border{
+	border: 0;
+}
+
+/************* PARCEIROS ***************/
+#parceiro{
+	width: 100%;
+	display: inline-block;
+	float: left;
+}
+
+
+.parceiros{
+	margin-top: 135px;
+	background: #f4f4f4;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 345px;
+}
+
+.parceiros h3{
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+	color: #403225;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+/************* CONTATO ***************/
+
+.contato h3{
+	text-transform: uppercase;
+	margin-top: 60px;
+	color: #403225;
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.contato p {
+	margin-bottom: 40px;
+	font-weight: 300;
+	font-size: 0.95em;
+	text-align: justify;
+}
+
+.contato label{
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+
+.contato input{
+	width: 100%;
+	margin-bottom: 25px;
+	text-indent: 10px;
+	height: 40px;
+	font-size: 0.9em;
+	color: #a5a5a5
+}
+
+/************* COMPATIBILIZAÇÃO COM BROWSERS PARA ESTILIZAÇÃO DE INPUTS ***************/
+
+::-webkit-input-placeholder {
+   color: #a5a5a5;
+   font-size: 1.05em;
+}
+
+::-moz-placeholder {
+   color: #a5a5a5;
+   font-size: 1.05em;
+}
+
+::-moz-placeholder {
+   color: #a5a5a5;
+   font-size: 1.05em;  
+}
+
+::-ms-input-placeholder {  
+   color: #a5a5a5;  
+   font-size: 1.05em;
+}
+
+
+.contato textarea{
+	padding-left: 10px;
+	width: 100%;
+	height: 239px;
+	margin-bottom: 10px;
+	color: #a5a5a5;
+	font-size: 1.05em;
+	font-family: 'Montserrat' sans-serif;
+	font-weight: 300;
+}
+
+.contato button{
+	padding: 10px 40px;
+	background: #403225;
+	color: #FFF;
+	float: right;
+	font-size: 1.05em;
+}
+
+/************* RODAPÉ ***************/
+
+.footer{
+	margin-top: 50px;
+	background: #403225;
+	color: #FFF;
+	height: 280px;
+}
+
+.footer .logo{
+	margin-top: 45px;
+}
+
+.footer .linha{
+	margin-top: 40px;
+	float: right;
+	height: 180px;
+	border-right: 1px solid #867f79;
+	
+}
+
+.footer .icons{
+	margin-top: 20px;
+	margin-left: 35px;
+}
+
+.footer .icons h4{
+	display: inline;
+	color: #a67b52;
+	margin-right: 20px;
+}
+
+.footer .direitos-reservados{
+	margin-top: 40px;
+	color: #70655c;
+	margin-left: -50px;
+	font-weight: 300;
+}
+
+.footer ul {
+	margin-top: 45px;
+}
+
+.footer ul li{
+	list-style: none;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+.footer ul li a{
+	color: #b3ada8;
+}
+
+.footer .contatos h3{
+	text-transform: uppercase;
+	margin-top: 45px;
+	font-weight: 600;
+	font-size: 1.05em;
+}
+
+.footer .contatos p{
+	color: #b3ada8;
+	margin-left: 40px;
+	font-weight: 300;
+	font-size: 1.05em;
+}
+
+.footer .contatos i{
+	color: #a67b52;
+	margin-right: 20px;
+	font-size: 1.2em;
+}
+
+.ow{
+	margin-left: 370px;
+}
+
