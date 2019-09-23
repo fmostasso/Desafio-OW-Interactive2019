@@ -46,6 +46,8 @@ requestByAjax('https://api.myjson.com/bins/dbycd', function (xhr) {
      }        
 });
 
+
+
 /*************CHAMADA DA FUNÇÃO PARA PARCEIROS***************/
 
 const parc = document.getElementById('parceiro');
@@ -66,6 +68,30 @@ requestByAjax('https://api.myjson.com/bins/qfhnh', function (xhr) {
      }        
 });
 
+/*************REQUISIÇÃO DE NOTICIAS, NÃO FUNICONOU DIREITO. TEM DIVISÕES E FICOU ESTRANHO***/
+
+function requestNoticias(url){
+
+               var noticias =  document.getElementById('noticias');
+
+                let xhr = new XMLHttpRequest();
+                var author;
+
+                console.log(xhr.responseText);
+
+                xhr.open('GET', url);
+
+                xhr.onreadystatechange = () =>{
+                    if(xhr.readyState == 4){
+                        var teste = JSON.parse(xhr.responseText);
+                        console.log(xhr.responseText);
+                        document.getElementById('noticias').innerHTML = xhr.responseText;
+                    }
+                   
+                }
+
+                xhr.send();
+            }
 
  
 

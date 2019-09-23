@@ -210,6 +210,12 @@
 	border: 0;
 }
 
+.lista-completa{
+	border-top: none;
+	margin-top: 20px;
+	float: right;
+}
+
 /************* PARCEIROS ***************/
 #parceiro{
 	width: 100%;

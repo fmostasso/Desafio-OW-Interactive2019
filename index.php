@@ -91,9 +91,14 @@
 
 					<div class="noticia">
 						<h6>{{date}}</h6>
-						<p>{{message}}</p>
+						<p class="no-border">{{message}}</p>
 					</div><!--noticia-->
+					<div class="lista-completa" onclick="requestNoticias('https://api.myjson.com/bins/11qq59')">
+						<h6>Lista completa <img src="images/seta.png"/></h6>
+					</div>
+					<div class="clear"></div>
 				</div><!--noticias- Fim terceira coluna-->
+
 			</div>
 		</div><!--painel-->
 		<div class="clear"></div>
